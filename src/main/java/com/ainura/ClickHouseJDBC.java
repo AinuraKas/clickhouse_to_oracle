@@ -18,7 +18,7 @@ import java.io.FileWriter;
 public class ClickHouseJDBC
         implements AutoCloseable {
 
-    private static final String DB_URL = "jdbc:clickhouse://10.255.149.202:8123/ipdr";
+    private static final String DB_URL = "jdbc:clickhouse://10.255.149.202:8123/def";
 
     private final Connection conn;
 
@@ -31,7 +31,7 @@ public class ClickHouseJDBC
         Properties properties = new Properties();
 
         properties.setProperty("user", "akasymalieva");
-        properties.setProperty("password","3edcVFR$");
+        properties.setProperty("password","pass");
         properties.put("socket_timeout", 100000000);
         properties.put("connection_timeout",100000000);
         properties.put("dataTransferTimeout",100000000);

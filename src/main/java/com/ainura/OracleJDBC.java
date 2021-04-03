@@ -13,7 +13,7 @@ import oracle.jdbc.OracleDriver;
 public class OracleJDBC
         implements AutoCloseable {
 
-    private static final String DB_URL = "jdbc:oracle:thin:@172.28.147.151:1521:FMSPRD";
+    private static final String DB_URL = "jdbc:oracle:thin:@172.28.147.151:1521:HHH";
 
     private final Connection conn;
 
@@ -38,9 +38,9 @@ public class OracleJDBC
         Properties properties = new Properties();
 
         properties.setProperty("user", "fms_teh");
-        properties.setProperty("password","sFqdWq_Ji#EOY6O");
+        properties.setProperty("password","pass");
 
-        conn=DriverManager.getConnection(DB_URL,"fms_teh","sFqdWq_Ji#EOY6O");
+        conn=DriverManager.getConnection(DB_URL,"fms_teh","pass");
 
 
     }
